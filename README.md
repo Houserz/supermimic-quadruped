@@ -36,6 +36,11 @@ A clip *fails* when a training termination fires (root height off by 0.15 m or t
 reference). The weakest clips (return 0.45-0.5) are Tencent high jumps, walk-run transitions and one fast
 held-out trot; none of them falls.
 
+## Roadmap
+
+- **Coming soon:** a SONIC-style controller on top of this tracker: a kinematic motion planner turns joystick
+  velocity commands into reference motion in real time, and the tracking policy follows it.
+
 ## What's inside
 
 ```
