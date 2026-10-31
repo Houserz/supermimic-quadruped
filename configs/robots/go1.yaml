@@ -1,0 +1,15 @@
+# Unitree Go1, the model shipped with mjlab (asset_zoo/robots/unitree_go1). Example of a second robot:
+# the retarget runs on it unchanged (tests/test_quadmotion_robot.py builds clips for it); there is no
+# training spec for it in src/supermimic/robots (see docs/PORTING.md).
+xml: mjlab:asset_zoo/robots/unitree_go1/xmls/go1.xml
+root_body: trunk
+legs:
+  FL: [FL_hip_joint, FL_thigh_joint, FL_calf_joint, FL]
+  FR: [FR_hip_joint, FR_thigh_joint, FR_calf_joint, FR]
+  RL: [RL_hip_joint, RL_thigh_joint, RL_calf_joint, RL]
+  RR: [RR_hip_joint, RR_thigh_joint, RR_calf_joint, RR]
+geoms:
+  foot: FL_foot_collision
+  trunk: trunk_collision
+knee_sign: -1
+stance: [0.9, -1.8]         # mjlab go1_constants.py INIT_STATE

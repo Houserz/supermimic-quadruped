@@ -1,0 +1,15 @@
+# Dobot Rover X1 (12-DoF quadruped); model provenance in src/supermimic/robots/assets/rover/SOURCE.md.
+# Read by quadmotion.robot.load_robot; every length comes from the MJCF.
+xml: src/supermimic/robots/assets/rover/dobot.xml
+root_body: link_trunk
+# leg: [abad joint, thigh joint, calf joint, foot site]
+legs:
+  FL: [joint_front_left_abad, joint_front_left_thigh_pitch, joint_front_left_calf_pitch, FL]
+  FR: [joint_front_right_abad, joint_front_right_thigh_pitch, joint_front_right_calf_pitch, FR]
+  RL: [joint_rear_left_abad, joint_rear_left_thigh_pitch, joint_rear_left_calf_pitch, RL]
+  RR: [joint_rear_right_abad, joint_rear_right_thigh_pitch, joint_rear_right_calf_pitch, RR]
+geoms:
+  foot: FL_foot_collision   # sphere: its radius is the foot radius
+  trunk: trunk_collision    # box: trunk-ground check
+knee_sign: -1               # calf < 0, knees backwards (Dobot's locomotion default pose)
+stance: [0.84, -1.3]        # front-leg (thigh, calf) of Dobot's default pose; sets the standing height dogs are scaled to

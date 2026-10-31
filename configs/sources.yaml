@@ -1,0 +1,659 @@
+# Public motion sources: pinned revision, licence and the SHA-256 of every raw file.
+# Written by scripts/data/fetch_sources.py; a file whose hash matches is not downloaded again.
+sources:
+  ai4animation_dog:
+    url: https://starke-consult.de/AI4Animation/SIGGRAPH_2018/MotionCapture.zip
+    license: CC BY-NC 4.0 (motion capture data), research/education only
+    citation: H. Zhang, S. Starke, T. Komura, J. Saito. Mode-Adaptive Neural Networks for Quadruped Motion Control. SIGGRAPH
+      2018
+  tencent_labrador:
+    repo: https://github.com/Tencent-RoboticsX/lifelike-agility-and-play
+    commit: cc9eaa9e79b35f1dd03983f28b669365098e30a5
+    path: data/raw_mocap_data
+    license: 'MIT (repository LICENSE.txt); README: code and data for research purpose only'
+  cyberdog2:
+    repo: https://github.com/MiRoboticsLab/cyberdog_locomotion
+    commit: ad79bfdebba17ae803d0ed37ccc0d1c5e3627af3
+    license: Apache-2.0
+    path: control/motion_list/cyberdog2
+files:
+  data/raw/ai4animation_dog/MotionCapture.zip:
+    source: ai4animation_dog
+    url: https://starke-consult.de/AI4Animation/SIGGRAPH_2018/MotionCapture.zip
+    sha256: 0ecd909b673cfca5e20c3f568376dcf27d7da3bd153957c2b034d95af366132a
+  data/raw/ai4animation_dog/bvh/D1_001_KAN01_001.bvh:
+    source: ai4animation_dog
+    url: https://starke-consult.de/AI4Animation/SIGGRAPH_2018/MotionCapture.zip#D1_001_KAN01_001.bvh
+    sha256: d910f61cacaa89dcd718d0676c5340033d5397b36613b070ea971b40b74e08dd
+  data/raw/ai4animation_dog/bvh/D1_003_KAN01_001.bvh:
+    source: ai4animation_dog
+    url: https://starke-consult.de/AI4Animation/SIGGRAPH_2018/MotionCapture.zip#D1_003_KAN01_001.bvh
+    sha256: 94f95de2d85722a267045b2eaad4ce208e8eddedc57d4fa26a41e9a5325cb3d4
+  data/raw/ai4animation_dog/bvh/D1_004_KAN01_001.bvh:
+    source: ai4animation_dog
+    url: https://starke-consult.de/AI4Animation/SIGGRAPH_2018/MotionCapture.zip#D1_004_KAN01_001.bvh
+    sha256: e480efaf46776d5da511d17432d292ad8debdb03d246128ec6445feda9d7f364
+  data/raw/ai4animation_dog/bvh/D1_005_KAN01_001.bvh:
+    source: ai4animation_dog
+    url: https://starke-consult.de/AI4Animation/SIGGRAPH_2018/MotionCapture.zip#D1_005_KAN01_001.bvh
+    sha256: d9b79fd1020aabbf6ef74585a4887bfdbc2b6b1179ba8e6a100c629ed5228cbd
+  data/raw/ai4animation_dog/bvh/D1_006_KAN01_001.bvh:
+    source: ai4animation_dog
+    url: https://starke-consult.de/AI4Animation/SIGGRAPH_2018/MotionCapture.zip#D1_006_KAN01_001.bvh
+    sha256: 0e2750825829eb36ad1675ffa55767932abdb487e9aacb6982e8024b75558ff5
+  data/raw/ai4animation_dog/bvh/D1_006_KAN01_002.bvh:
+    source: ai4animation_dog
+    url: https://starke-consult.de/AI4Animation/SIGGRAPH_2018/MotionCapture.zip#D1_006_KAN01_002.bvh
+    sha256: 7652a82d3c367d7246bbf695eff34a9cc66086084414941328bfda81e03d2c19
+  data/raw/ai4animation_dog/bvh/D1_007_KAN01_001.bvh:
+    source: ai4animation_dog
+    url: https://starke-consult.de/AI4Animation/SIGGRAPH_2018/MotionCapture.zip#D1_007_KAN01_001.bvh
+    sha256: 99fad4469d3e8f35b630d3ae6385f53bfc8d6f9f89d0b39fe69a16decaad21de
+  data/raw/ai4animation_dog/bvh/D1_008_KAN01_001.bvh:
+    source: ai4animation_dog
+    url: https://starke-consult.de/AI4Animation/SIGGRAPH_2018/MotionCapture.zip#D1_008_KAN01_001.bvh
+    sha256: 849ddec2e6a08c8ff2c925b0cb02dd51115f1415febcfb53ccd7f75406d67956
+  data/raw/ai4animation_dog/bvh/D1_008_KAN01_002.bvh:
+    source: ai4animation_dog
+    url: https://starke-consult.de/AI4Animation/SIGGRAPH_2018/MotionCapture.zip#D1_008_KAN01_002.bvh
+    sha256: 5dc355ceff03c756c3b110e5cba15209b31c47da1d32153c85ad1219affab8cb
+  data/raw/ai4animation_dog/bvh/D1_009_KAN01_001.bvh:
+    source: ai4animation_dog
+    url: https://starke-consult.de/AI4Animation/SIGGRAPH_2018/MotionCapture.zip#D1_009_KAN01_001.bvh
+    sha256: c40aaab06d728ae60df937e388736786d5d0d1ca1240b38ccb96c72c950ec64f
+  data/raw/ai4animation_dog/bvh/D1_009_KAN01_002.bvh:
+    source: ai4animation_dog
+    url: https://starke-consult.de/AI4Animation/SIGGRAPH_2018/MotionCapture.zip#D1_009_KAN01_002.bvh
+    sha256: 0af831ef91ab85bf2b929641ac8184e51bcbb323e691096316db836073202df3
+  data/raw/ai4animation_dog/bvh/D1_010_KAN01_001.bvh:
+    source: ai4animation_dog
+    url: https://starke-consult.de/AI4Animation/SIGGRAPH_2018/MotionCapture.zip#D1_010_KAN01_001.bvh
+    sha256: 61239cf09fa93f32060821c74688658a8c7b7c057e030eb8c05816964ba1e07f
+  data/raw/ai4animation_dog/bvh/D1_010_KAN01_002.bvh:
+    source: ai4animation_dog
+    url: https://starke-consult.de/AI4Animation/SIGGRAPH_2018/MotionCapture.zip#D1_010_KAN01_002.bvh
+    sha256: b7f7c3016f7751772ff8506cd877a1d042beac7edf4fa70c92051a90a1413a62
+  data/raw/ai4animation_dog/bvh/D1_010_KAN01_003.bvh:
+    source: ai4animation_dog
+    url: https://starke-consult.de/AI4Animation/SIGGRAPH_2018/MotionCapture.zip#D1_010_KAN01_003.bvh
+    sha256: d97492f567f065ac66a220d2650b8ada15ded7c4df68ecf4a5642f46dae966d6
+  data/raw/ai4animation_dog/bvh/D1_010_KAN01_004.bvh:
+    source: ai4animation_dog
+    url: https://starke-consult.de/AI4Animation/SIGGRAPH_2018/MotionCapture.zip#D1_010_KAN01_004.bvh
+    sha256: 6998fd8d17f3a11124320257bf026c13f4a845ce11e4015bef0fc99b443ef339
+  data/raw/ai4animation_dog/bvh/D1_013_KAN01_001.bvh:
+    source: ai4animation_dog
+    url: https://starke-consult.de/AI4Animation/SIGGRAPH_2018/MotionCapture.zip#D1_013_KAN01_001.bvh
+    sha256: d8d3326e79e0d48beea9972d9fce75f95f912109ac5f287674ffd4d09847f825
+  data/raw/ai4animation_dog/bvh/D1_025_KAN01_001.bvh:
+    source: ai4animation_dog
+    url: https://starke-consult.de/AI4Animation/SIGGRAPH_2018/MotionCapture.zip#D1_025_KAN01_001.bvh
+    sha256: da004c683146a3dd34665cab96cf01b7798b77ecc9d588a5153e179b86369165
+  data/raw/ai4animation_dog/bvh/D1_031_KAN01_001.bvh:
+    source: ai4animation_dog
+    url: https://starke-consult.de/AI4Animation/SIGGRAPH_2018/MotionCapture.zip#D1_031_KAN01_001.bvh
+    sha256: 7a19e5ad8d1de88343be69bb07880a152d84c0959431de56240711edf1475497
+  data/raw/ai4animation_dog/bvh/D1_045_KAN01_001.bvh:
+    source: ai4animation_dog
+    url: https://starke-consult.de/AI4Animation/SIGGRAPH_2018/MotionCapture.zip#D1_045_KAN01_001.bvh
+    sha256: 7a36e076c91c6b43d8bcc8bb706de4377b8dbc27df7c2dda6d3e122cbaa582dc
+  data/raw/ai4animation_dog/bvh/D1_047_KAN01_001.bvh:
+    source: ai4animation_dog
+    url: https://starke-consult.de/AI4Animation/SIGGRAPH_2018/MotionCapture.zip#D1_047_KAN01_001.bvh
+    sha256: 59f86278ba73e13c809472a16dc059dacef02ce71f82790038bf70aef7314878
+  data/raw/ai4animation_dog/bvh/D1_047z_KAN01_002.bvh:
+    source: ai4animation_dog
+    url: https://starke-consult.de/AI4Animation/SIGGRAPH_2018/MotionCapture.zip#D1_047z_KAN01_002.bvh
+    sha256: 5a06ee3a421edab863e2463dab608a3903861e0c660ae14fc8d8570e670b56dc
+  data/raw/ai4animation_dog/bvh/D1_047z_KAN01_003.bvh:
+    source: ai4animation_dog
+    url: https://starke-consult.de/AI4Animation/SIGGRAPH_2018/MotionCapture.zip#D1_047z_KAN01_003.bvh
+    sha256: 94578d16e907c6a3d7e176f0e72d01c415dcea135ec482fec376bb0ff5a86fd9
+  data/raw/ai4animation_dog/bvh/D1_047z_KAN01_004.bvh:
+    source: ai4animation_dog
+    url: https://starke-consult.de/AI4Animation/SIGGRAPH_2018/MotionCapture.zip#D1_047z_KAN01_004.bvh
+    sha256: ecf944c8b91c9d37309b4e0a2ab0cb6b7b5665e17d0aca7d008fea8691d57d71
+  data/raw/ai4animation_dog/bvh/D1_047z_KAN01_005.bvh:
+    source: ai4animation_dog
+    url: https://starke-consult.de/AI4Animation/SIGGRAPH_2018/MotionCapture.zip#D1_047z_KAN01_005.bvh
+    sha256: e5ac695da563deb44ae47f22a589c1b0927b2799a1f1af0453522717fab54830
+  data/raw/ai4animation_dog/bvh/D1_049_KAN01_001.bvh:
+    source: ai4animation_dog
+    url: https://starke-consult.de/AI4Animation/SIGGRAPH_2018/MotionCapture.zip#D1_049_KAN01_001.bvh
+    sha256: 85c8e4ea89440a95d2cfaf6c9c6ae984fc2c54f0399be7d0a65ed5d7b05cf992
+  data/raw/ai4animation_dog/bvh/D1_053_KAN01_001.bvh:
+    source: ai4animation_dog
+    url: https://starke-consult.de/AI4Animation/SIGGRAPH_2018/MotionCapture.zip#D1_053_KAN01_001.bvh
+    sha256: ae4d750aad8cb20dec1b18e5738ad8a2e8418b5f724a1c6033a621eb7f109736
+  data/raw/ai4animation_dog/bvh/D1_053_KAN01_002.bvh:
+    source: ai4animation_dog
+    url: https://starke-consult.de/AI4Animation/SIGGRAPH_2018/MotionCapture.zip#D1_053_KAN01_002.bvh
+    sha256: 86bc2f2912159cb7b1e67a9e2155fe9b36554234952b8f270db0ccc5a79db963
+  data/raw/ai4animation_dog/bvh/D1_055_KAN01_001.bvh:
+    source: ai4animation_dog
+    url: https://starke-consult.de/AI4Animation/SIGGRAPH_2018/MotionCapture.zip#D1_055_KAN01_001.bvh
+    sha256: 3d0ae39974ca9a22d22b62b63d58599a2807fd191b43a02f16f64b45f8f441f7
+  data/raw/ai4animation_dog/bvh/D1_057_KAN01_001.bvh:
+    source: ai4animation_dog
+    url: https://starke-consult.de/AI4Animation/SIGGRAPH_2018/MotionCapture.zip#D1_057_KAN01_001.bvh
+    sha256: 60d5ccc9bf4d73917f58d2c855a979c4fbf0eef3d1a892b82e37cfd16010ac99
+  data/raw/ai4animation_dog/bvh/D1_058_KAN01_001.bvh:
+    source: ai4animation_dog
+    url: https://starke-consult.de/AI4Animation/SIGGRAPH_2018/MotionCapture.zip#D1_058_KAN01_001.bvh
+    sha256: af475e8b0c1a2d7b41fd5a4beb2371f6c8a483e5866a8f08351a2fc8056a96ad
+  data/raw/ai4animation_dog/bvh/D1_059_KAN01_001.bvh:
+    source: ai4animation_dog
+    url: https://starke-consult.de/AI4Animation/SIGGRAPH_2018/MotionCapture.zip#D1_059_KAN01_001.bvh
+    sha256: 62ebc627d00135b50eaa9f37a482eeddf25e08547e8565fd468049ba01bf9f0b
+  data/raw/ai4animation_dog/bvh/D1_061_KAN01_001.bvh:
+    source: ai4animation_dog
+    url: https://starke-consult.de/AI4Animation/SIGGRAPH_2018/MotionCapture.zip#D1_061_KAN01_001.bvh
+    sha256: e4d870f580e07ee530c8529c743acbb196992eed6b92f5a7aef9625d1a3fc9fa
+  data/raw/ai4animation_dog/bvh/D1_061z_KAN01_002.bvh:
+    source: ai4animation_dog
+    url: https://starke-consult.de/AI4Animation/SIGGRAPH_2018/MotionCapture.zip#D1_061z_KAN01_002.bvh
+    sha256: 43533d5d916ce3815cab5003c6910d9b71c5f0b9f423d4958eb73be4a1ac91fe
+  data/raw/ai4animation_dog/bvh/D1_061z_KAN01_003.bvh:
+    source: ai4animation_dog
+    url: https://starke-consult.de/AI4Animation/SIGGRAPH_2018/MotionCapture.zip#D1_061z_KAN01_003.bvh
+    sha256: 7b017ee9fdfc8f66c05fd6581942c5a95af3ec4e3e5727ef360ec99800d884c8
+  data/raw/ai4animation_dog/bvh/D1_071_KAN02_002.bvh:
+    source: ai4animation_dog
+    url: https://starke-consult.de/AI4Animation/SIGGRAPH_2018/MotionCapture.zip#D1_071_KAN02_002.bvh
+    sha256: e109b9e494b6498c943a4d6739b9bd8d534bbfeb3a4ed13812ce736704dfdeee
+  data/raw/ai4animation_dog/bvh/D1_073_KAN02_002.bvh:
+    source: ai4animation_dog
+    url: https://starke-consult.de/AI4Animation/SIGGRAPH_2018/MotionCapture.zip#D1_073_KAN02_002.bvh
+    sha256: 65fc54d991c02fc566440259b860e283a637d3c7cfe7b44950d30720705d1d77
+  data/raw/ai4animation_dog/bvh/D1_086_KAN02_001.bvh:
+    source: ai4animation_dog
+    url: https://starke-consult.de/AI4Animation/SIGGRAPH_2018/MotionCapture.zip#D1_086_KAN02_001.bvh
+    sha256: e80fc624844e77fbb01ca4d947850e0f169e57b93da4ae604d72a27846bfb4e1
+  data/raw/ai4animation_dog/bvh/D1_ex01_KAN01_001.bvh:
+    source: ai4animation_dog
+    url: https://starke-consult.de/AI4Animation/SIGGRAPH_2018/MotionCapture.zip#D1_ex01_KAN01_001.bvh
+    sha256: a274bf7adc10a18a054b51cdae6362e566f4dfc64ac7f70380f6d1a90b3005a0
+  data/raw/ai4animation_dog/bvh/D1_ex02_KAN02_001.bvh:
+    source: ai4animation_dog
+    url: https://starke-consult.de/AI4Animation/SIGGRAPH_2018/MotionCapture.zip#D1_ex02_KAN02_001.bvh
+    sha256: e17880a7e819326bd5b667b18e423db890c9f52776e9b1e42c8cf045189ee4c4
+  data/raw/ai4animation_dog/bvh/D1_ex03_KAN02_001.bvh:
+    source: ai4animation_dog
+    url: https://starke-consult.de/AI4Animation/SIGGRAPH_2018/MotionCapture.zip#D1_ex03_KAN02_001.bvh
+    sha256: fa24d375b1ca6ed66a3dd9b3ced27b44cb7e658be73090cadf58c66eb7af62c7
+  data/raw/ai4animation_dog/bvh/D1_ex03_KAN02_003.bvh:
+    source: ai4animation_dog
+    url: https://starke-consult.de/AI4Animation/SIGGRAPH_2018/MotionCapture.zip#D1_ex03_KAN02_003.bvh
+    sha256: 6228cdb1e05b1875a5601f330dee5a66c57913413c2b9d2b1c8ca817cb714d87
+  data/raw/ai4animation_dog/bvh/D1_ex03_KAN02_006.bvh:
+    source: ai4animation_dog
+    url: https://starke-consult.de/AI4Animation/SIGGRAPH_2018/MotionCapture.zip#D1_ex03_KAN02_006.bvh
+    sha256: bec9fae85335720a44d11ab82768fbee8fe8f49507053fe18832e65ac24975e3
+  data/raw/ai4animation_dog/bvh/D1_ex03_KAN02_012.bvh:
+    source: ai4animation_dog
+    url: https://starke-consult.de/AI4Animation/SIGGRAPH_2018/MotionCapture.zip#D1_ex03_KAN02_012.bvh
+    sha256: 96307d48ee3ae55253fca57bb4724db89c202a570de80ee801d792a4f60f6c63
+  data/raw/ai4animation_dog/bvh/D1_ex03_KAN02_013.bvh:
+    source: ai4animation_dog
+    url: https://starke-consult.de/AI4Animation/SIGGRAPH_2018/MotionCapture.zip#D1_ex03_KAN02_013.bvh
+    sha256: 782bab15a6eb8895e7befe18310ba4d90ab6691568f6c2768ec69b43fcb80706
+  data/raw/ai4animation_dog/bvh/D1_ex03_KAN02_014.bvh:
+    source: ai4animation_dog
+    url: https://starke-consult.de/AI4Animation/SIGGRAPH_2018/MotionCapture.zip#D1_ex03_KAN02_014.bvh
+    sha256: 9c8d72cc097c7a1207c0c8d38fec9e967334a22ac45cfb22d3a47f9612f5fa5b
+  data/raw/ai4animation_dog/bvh/D1_ex04_KAN02_001.bvh:
+    source: ai4animation_dog
+    url: https://starke-consult.de/AI4Animation/SIGGRAPH_2018/MotionCapture.zip#D1_ex04_KAN02_001.bvh
+    sha256: 563dff491f0e2c0d5b94ef7960262346fa9b7c9d6cd90d51b0feeb5812ff65be
+  data/raw/ai4animation_dog/bvh/D1_ex04_KAN02_002.bvh:
+    source: ai4animation_dog
+    url: https://starke-consult.de/AI4Animation/SIGGRAPH_2018/MotionCapture.zip#D1_ex04_KAN02_002.bvh
+    sha256: f7a59b325e1e283657b9e61846b084522d9941021d9f3d716d0f962bf31de8be
+  data/raw/ai4animation_dog/bvh/D1_ex04_KAN02_003.bvh:
+    source: ai4animation_dog
+    url: https://starke-consult.de/AI4Animation/SIGGRAPH_2018/MotionCapture.zip#D1_ex04_KAN02_003.bvh
+    sha256: 877504e68ba6310e9190c4078b3d4d0f71a5d9238f38aba9e49df0f5c19cb848
+  data/raw/ai4animation_dog/bvh/D1_ex04_KAN02_004.bvh:
+    source: ai4animation_dog
+    url: https://starke-consult.de/AI4Animation/SIGGRAPH_2018/MotionCapture.zip#D1_ex04_KAN02_004.bvh
+    sha256: dd81ec77a08c3bc73e076faf7e26439813a72464e3cec0c79fa7e0968e644477
+  data/raw/ai4animation_dog/bvh/D1_ex05_KAN02_001.bvh:
+    source: ai4animation_dog
+    url: https://starke-consult.de/AI4Animation/SIGGRAPH_2018/MotionCapture.zip#D1_ex05_KAN02_001.bvh
+    sha256: d1f868b94a4f6b99c3475d11bde37aa75c833f31234162102b979eee93e6ce4f
+  data/raw/ai4animation_dog/bvh/D1_ex06_KAN02_001.bvh:
+    source: ai4animation_dog
+    url: https://starke-consult.de/AI4Animation/SIGGRAPH_2018/MotionCapture.zip#D1_ex06_KAN02_001.bvh
+    sha256: 5a7587fe13e5a6dddae33c3911d1914fd78f071b347c1e15050f1ec5bc2d8210
+  data/raw/tencent_labrador/dog_back_001.bvh:
+    source: tencent_labrador
+    url: https://raw.githubusercontent.com/Tencent-RoboticsX/lifelike-agility-and-play/cc9eaa9e79b35f1dd03983f28b669365098e30a5/data/raw_mocap_data/dog_back_001.bvh
+    sha256: b2236a582a522904140d0095dec1cd9db3cbe0794b1ce4bce66f31e9e009ad26
+  data/raw/tencent_labrador/dog_back_002.bvh:
+    source: tencent_labrador
+    url: https://raw.githubusercontent.com/Tencent-RoboticsX/lifelike-agility-and-play/cc9eaa9e79b35f1dd03983f28b669365098e30a5/data/raw_mocap_data/dog_back_002.bvh
+    sha256: 97a38312244481e6ddf560271952db5a1e227b1eb9ac36d7c7e5f5bb9eaf1199
+  data/raw/tencent_labrador/dog_fast_run_02_004.bvh:
+    source: tencent_labrador
+    url: https://raw.githubusercontent.com/Tencent-RoboticsX/lifelike-agility-and-play/cc9eaa9e79b35f1dd03983f28b669365098e30a5/data/raw_mocap_data/dog_fast_run_02_004.bvh
+    sha256: 76fcc58015d733aa1ad0ee4431407028bc1101e7622c69ccaa7cc8c598c4a4b3
+  data/raw/tencent_labrador/dog_fast_run_02_005.bvh:
+    source: tencent_labrador
+    url: https://raw.githubusercontent.com/Tencent-RoboticsX/lifelike-agility-and-play/cc9eaa9e79b35f1dd03983f28b669365098e30a5/data/raw_mocap_data/dog_fast_run_02_005.bvh
+    sha256: 259d2a94ee215c18cfed54d1950f664e200fe0c7b266341fcbe6e961fdfddbe6
+  data/raw/tencent_labrador/dog_fast_run_02_006.bvh:
+    source: tencent_labrador
+    url: https://raw.githubusercontent.com/Tencent-RoboticsX/lifelike-agility-and-play/cc9eaa9e79b35f1dd03983f28b669365098e30a5/data/raw_mocap_data/dog_fast_run_02_006.bvh
+    sha256: c6a27e7188642bbfa02eea37f06961634293461457be041939619d5a0cb9cb38
+  data/raw/tencent_labrador/dog_fast_run_02_007.bvh:
+    source: tencent_labrador
+    url: https://raw.githubusercontent.com/Tencent-RoboticsX/lifelike-agility-and-play/cc9eaa9e79b35f1dd03983f28b669365098e30a5/data/raw_mocap_data/dog_fast_run_02_007.bvh
+    sha256: a4b7e0ce9c9f89f587b2b7fc92edeb8ab5d569c80b55a956b6c2f517bfbc5a32
+  data/raw/tencent_labrador/dog_fast_run_02_008.bvh:
+    source: tencent_labrador
+    url: https://raw.githubusercontent.com/Tencent-RoboticsX/lifelike-agility-and-play/cc9eaa9e79b35f1dd03983f28b669365098e30a5/data/raw_mocap_data/dog_fast_run_02_008.bvh
+    sha256: e13ebb09c9d36b258a9f6b51e6ebf5304240310899edc5f3cdc79d2b3838cbf7
+  data/raw/tencent_labrador/dog_hit_001.bvh:
+    source: tencent_labrador
+    url: https://raw.githubusercontent.com/Tencent-RoboticsX/lifelike-agility-and-play/cc9eaa9e79b35f1dd03983f28b669365098e30a5/data/raw_mocap_data/dog_hit_001.bvh
+    sha256: c08e721c7fc5e112f646c4bcbe4dfdea3e77228d6cbf906d2c1caa47dcddf0bd
+  data/raw/tencent_labrador/dog_idle_001.bvh:
+    source: tencent_labrador
+    url: https://raw.githubusercontent.com/Tencent-RoboticsX/lifelike-agility-and-play/cc9eaa9e79b35f1dd03983f28b669365098e30a5/data/raw_mocap_data/dog_idle_001.bvh
+    sha256: 101aad0bbbd80ecd4423875b97589de73c2a0ef7fe5b066dd1fc12057cd14179
+  data/raw/tencent_labrador/dog_idle_002.bvh:
+    source: tencent_labrador
+    url: https://raw.githubusercontent.com/Tencent-RoboticsX/lifelike-agility-and-play/cc9eaa9e79b35f1dd03983f28b669365098e30a5/data/raw_mocap_data/dog_idle_002.bvh
+    sha256: 17f81b6d0d0ca439067e51bdf28405347377702514098ca9871a2b117504d2c1
+  data/raw/tencent_labrador/dog_idle_003.bvh:
+    source: tencent_labrador
+    url: https://raw.githubusercontent.com/Tencent-RoboticsX/lifelike-agility-and-play/cc9eaa9e79b35f1dd03983f28b669365098e30a5/data/raw_mocap_data/dog_idle_003.bvh
+    sha256: 7bcb0ed4886934e2d2b6426f1d9a712146eb575653eb2475fd359c3c7520fb00
+  data/raw/tencent_labrador/dog_idle_004.bvh:
+    source: tencent_labrador
+    url: https://raw.githubusercontent.com/Tencent-RoboticsX/lifelike-agility-and-play/cc9eaa9e79b35f1dd03983f28b669365098e30a5/data/raw_mocap_data/dog_idle_004.bvh
+    sha256: 7f3dec4ea56aeeecce4dc6526be706310d7ea94ab5d5f8f54ba563fb163820a5
+  data/raw/tencent_labrador/dog_jump_002.bvh:
+    source: tencent_labrador
+    url: https://raw.githubusercontent.com/Tencent-RoboticsX/lifelike-agility-and-play/cc9eaa9e79b35f1dd03983f28b669365098e30a5/data/raw_mocap_data/dog_jump_002.bvh
+    sha256: dd20505e0d5ae53332cb70e67b3eb78976f5dc0f4edef36b6556fb4381177e03
+  data/raw/tencent_labrador/dog_jump_003.bvh:
+    source: tencent_labrador
+    url: https://raw.githubusercontent.com/Tencent-RoboticsX/lifelike-agility-and-play/cc9eaa9e79b35f1dd03983f28b669365098e30a5/data/raw_mocap_data/dog_jump_003.bvh
+    sha256: 12e539a24403fe33cdd8c32a52870bce2c34a03366982325e908650b5da5ae96
+  data/raw/tencent_labrador/dog_jump_004.bvh:
+    source: tencent_labrador
+    url: https://raw.githubusercontent.com/Tencent-RoboticsX/lifelike-agility-and-play/cc9eaa9e79b35f1dd03983f28b669365098e30a5/data/raw_mocap_data/dog_jump_004.bvh
+    sha256: 0cc02b835e19d7c1bfb9a0fd8e986a51febf3827b25130be27e76553dbbec2b8
+  data/raw/tencent_labrador/dog_jump_006.bvh:
+    source: tencent_labrador
+    url: https://raw.githubusercontent.com/Tencent-RoboticsX/lifelike-agility-and-play/cc9eaa9e79b35f1dd03983f28b669365098e30a5/data/raw_mocap_data/dog_jump_006.bvh
+    sha256: 60a1a112a7a890383e15a1027668daa35ba3d4b9452ea3bc90aa14b0f73f5899
+  data/raw/tencent_labrador/dog_jump_007.bvh:
+    source: tencent_labrador
+    url: https://raw.githubusercontent.com/Tencent-RoboticsX/lifelike-agility-and-play/cc9eaa9e79b35f1dd03983f28b669365098e30a5/data/raw_mocap_data/dog_jump_007.bvh
+    sha256: 77c2874c795670d446d86531271a0b6b49524b9e125a9f076df0d51fc29575b7
+  data/raw/tencent_labrador/dog_jump_high_001.bvh:
+    source: tencent_labrador
+    url: https://raw.githubusercontent.com/Tencent-RoboticsX/lifelike-agility-and-play/cc9eaa9e79b35f1dd03983f28b669365098e30a5/data/raw_mocap_data/dog_jump_high_001.bvh
+    sha256: 28cf49c521329a55f3e44b1d332763cdd0916de756ce2b5f48077a666bdc622b
+  data/raw/tencent_labrador/dog_jump_high_002.bvh:
+    source: tencent_labrador
+    url: https://raw.githubusercontent.com/Tencent-RoboticsX/lifelike-agility-and-play/cc9eaa9e79b35f1dd03983f28b669365098e30a5/data/raw_mocap_data/dog_jump_high_002.bvh
+    sha256: f0821b9d1b016621411c7fc4e23687efd9dce5bd96de11117150e6ddf0d2adc0
+  data/raw/tencent_labrador/dog_play_001.bvh:
+    source: tencent_labrador
+    url: https://raw.githubusercontent.com/Tencent-RoboticsX/lifelike-agility-and-play/cc9eaa9e79b35f1dd03983f28b669365098e30a5/data/raw_mocap_data/dog_play_001.bvh
+    sha256: d27c0c0d32d5539f42a6d1c2531b110913bbc7f6b031a17bc5b1a726f8d30f60
+  data/raw/tencent_labrador/dog_play_002.bvh:
+    source: tencent_labrador
+    url: https://raw.githubusercontent.com/Tencent-RoboticsX/lifelike-agility-and-play/cc9eaa9e79b35f1dd03983f28b669365098e30a5/data/raw_mocap_data/dog_play_002.bvh
+    sha256: 1e30bdffb209a797e215f93ba07f04b03b0a265530f0ddfdb7db38648f3facd0
+  data/raw/tencent_labrador/dog_quad_run_001.bvh:
+    source: tencent_labrador
+    url: https://raw.githubusercontent.com/Tencent-RoboticsX/lifelike-agility-and-play/cc9eaa9e79b35f1dd03983f28b669365098e30a5/data/raw_mocap_data/dog_quad_run_001.bvh
+    sha256: bace8c15a8011e25df53f0209c6ca14d1dc327dd55e14493bc367dcd95aaaee1
+  data/raw/tencent_labrador/dog_quad_run_002.bvh:
+    source: tencent_labrador
+    url: https://raw.githubusercontent.com/Tencent-RoboticsX/lifelike-agility-and-play/cc9eaa9e79b35f1dd03983f28b669365098e30a5/data/raw_mocap_data/dog_quad_run_002.bvh
+    sha256: 39f5a8d3e906ddd7532f54c2f7a621f709f4051a79ce13e09ffa72e09b606b6d
+  data/raw/tencent_labrador/dog_quad_walk_001.bvh:
+    source: tencent_labrador
+    url: https://raw.githubusercontent.com/Tencent-RoboticsX/lifelike-agility-and-play/cc9eaa9e79b35f1dd03983f28b669365098e30a5/data/raw_mocap_data/dog_quad_walk_001.bvh
+    sha256: ddefe1465b2bfc5d6c6fabd2d10c8e43dd36766727ff73bff03ccc411a6ec602
+  data/raw/tencent_labrador/dog_quad_walk_002.bvh:
+    source: tencent_labrador
+    url: https://raw.githubusercontent.com/Tencent-RoboticsX/lifelike-agility-and-play/cc9eaa9e79b35f1dd03983f28b669365098e30a5/data/raw_mocap_data/dog_quad_walk_002.bvh
+    sha256: 8a58e6952d5c0d288bb854917fccf5743b32c065cb32e69982e47d16c5d74e81
+  data/raw/tencent_labrador/dog_quad_walkrun_001.bvh:
+    source: tencent_labrador
+    url: https://raw.githubusercontent.com/Tencent-RoboticsX/lifelike-agility-and-play/cc9eaa9e79b35f1dd03983f28b669365098e30a5/data/raw_mocap_data/dog_quad_walkrun_001.bvh
+    sha256: e1404dc6fd2e4f0fbec4a6878d2dfe27d8a6d51cf7460824f79f6738051ef7a5
+  data/raw/tencent_labrador/dog_quad_walkrun_005.bvh:
+    source: tencent_labrador
+    url: https://raw.githubusercontent.com/Tencent-RoboticsX/lifelike-agility-and-play/cc9eaa9e79b35f1dd03983f28b669365098e30a5/data/raw_mocap_data/dog_quad_walkrun_005.bvh
+    sha256: 474f6a6e8977e37c0b52f0f4e8543301cc9945839bf9e8ab67d0439c32a66809
+  data/raw/tencent_labrador/dog_quad_walkrun_006.bvh:
+    source: tencent_labrador
+    url: https://raw.githubusercontent.com/Tencent-RoboticsX/lifelike-agility-and-play/cc9eaa9e79b35f1dd03983f28b669365098e30a5/data/raw_mocap_data/dog_quad_walkrun_006.bvh
+    sha256: f575cef3e4a0ac247f185d9beda29ab86a7ec95aed2ffe79739bf7d642e70013
+  data/raw/tencent_labrador/dog_quad_walkrun_007.bvh:
+    source: tencent_labrador
+    url: https://raw.githubusercontent.com/Tencent-RoboticsX/lifelike-agility-and-play/cc9eaa9e79b35f1dd03983f28b669365098e30a5/data/raw_mocap_data/dog_quad_walkrun_007.bvh
+    sha256: 4de09bffd8fb3d26f32a5e8d2a0e38bf8db3ed8256cdce9110a659425041f851
+  data/raw/tencent_labrador/dog_star_walk_001.bvh:
+    source: tencent_labrador
+    url: https://raw.githubusercontent.com/Tencent-RoboticsX/lifelike-agility-and-play/cc9eaa9e79b35f1dd03983f28b669365098e30a5/data/raw_mocap_data/dog_star_walk_001.bvh
+    sha256: 3010c3814d9700a585f29ebe3af8dc05a3164bd48dccae0018f0c861ac7b5450
+  data/raw/tencent_labrador/dog_star_walk_003.bvh:
+    source: tencent_labrador
+    url: https://raw.githubusercontent.com/Tencent-RoboticsX/lifelike-agility-and-play/cc9eaa9e79b35f1dd03983f28b669365098e30a5/data/raw_mocap_data/dog_star_walk_003.bvh
+    sha256: 0c0b6ff06151ebd9a649ce0111c416269e4e9288b64dc71f4724f8124a413274
+  data/raw/tencent_labrador/dog_zig_walk_001.bvh:
+    source: tencent_labrador
+    url: https://raw.githubusercontent.com/Tencent-RoboticsX/lifelike-agility-and-play/cc9eaa9e79b35f1dd03983f28b669365098e30a5/data/raw_mocap_data/dog_zig_walk_001.bvh
+    sha256: 922fd11781dcb80e5847657b4d5f8d46ef2adfbb9ed826a68b1e58ffb795cea3
+  data/raw/tencent_labrador/dog_zig_walk_002.bvh:
+    source: tencent_labrador
+    url: https://raw.githubusercontent.com/Tencent-RoboticsX/lifelike-agility-and-play/cc9eaa9e79b35f1dd03983f28b669365098e30a5/data/raw_mocap_data/dog_zig_walk_002.bvh
+    sha256: 41849b8687ebe1ae19747a70c3b8036232f2daa821246826e32df0a45b2880ad
+  data/raw/tencent_labrador/LICENSE.txt:
+    source: tencent_labrador
+    url: https://raw.githubusercontent.com/Tencent-RoboticsX/lifelike-agility-and-play/cc9eaa9e79b35f1dd03983f28b669365098e30a5/LICENSE.txt
+    sha256: 63f47c05eaff22310b65dfc152aa0eeecae1de3aba4663510ebc5df4dff0ff1f
+  data/raw/cyberdog2/LICENSE:
+    source: cyberdog2
+    url: https://raw.githubusercontent.com/MiRoboticsLab/cyberdog_locomotion/ad79bfdebba17ae803d0ed37ccc0d1c5e3627af3/LICENSE
+    sha256: f562afddff338848400167b8df49a72bf705636329c092d2d2409e2fa2d0ac21
+  data/raw/cyberdog2/cyberdog2-description.yaml:
+    source: cyberdog2
+    url: https://raw.githubusercontent.com/MiRoboticsLab/cyberdog_locomotion/ad79bfdebba17ae803d0ed37ccc0d1c5e3627af3/common/config/cyberdog2-description.yaml
+    sha256: 6e1a5c03f3b84f1fff82950057f04da3f4612b72f0e7824857ce9996a7ca9a1c
+  data/raw/cyberdog2/motion_list/preinstalled/cyberdog2_ballet.toml:
+    source: cyberdog2
+    url: https://raw.githubusercontent.com/MiRoboticsLab/cyberdog_locomotion/ad79bfdebba17ae803d0ed37ccc0d1c5e3627af3/control/motion_list/cyberdog2/preinstalled/cyberdog2_ballet.toml
+    sha256: ff0750a11066651c67efa6dcbd28d9f4b2eb291554b96604fe9d2f283144ddc4
+  data/raw/cyberdog2/motion_list/preinstalled/cyberdog2_bodystretch.toml:
+    source: cyberdog2
+    url: https://raw.githubusercontent.com/MiRoboticsLab/cyberdog_locomotion/ad79bfdebba17ae803d0ed37ccc0d1c5e3627af3/control/motion_list/cyberdog2/preinstalled/cyberdog2_bodystretch.toml
+    sha256: 12342318e0e80ef4221f9589c279010953f28ca7b06d782a08ec77330f4be6f4
+  data/raw/cyberdog2/motion_list/preinstalled/cyberdog2_diagonal_left.toml:
+    source: cyberdog2
+    url: https://raw.githubusercontent.com/MiRoboticsLab/cyberdog_locomotion/ad79bfdebba17ae803d0ed37ccc0d1c5e3627af3/control/motion_list/cyberdog2/preinstalled/cyberdog2_diagonal_left.toml
+    sha256: 01b302146b11a1c0946623dcdc22b27783b4111946b41d90d11a3cf520d59781
+  data/raw/cyberdog2/motion_list/preinstalled/cyberdog2_diagonal_right.toml:
+    source: cyberdog2
+    url: https://raw.githubusercontent.com/MiRoboticsLab/cyberdog_locomotion/ad79bfdebba17ae803d0ed37ccc0d1c5e3627af3/control/motion_list/cyberdog2/preinstalled/cyberdog2_diagonal_right.toml
+    sha256: 1d2ee7fd7034cbf338fdf6134fc6bc54408c6942c3ad80ddc4594c55a3e1a361
+  data/raw/cyberdog2/motion_list/preinstalled/cyberdog2_front_lift_left_right.toml:
+    source: cyberdog2
+    url: https://raw.githubusercontent.com/MiRoboticsLab/cyberdog_locomotion/ad79bfdebba17ae803d0ed37ccc0d1c5e3627af3/control/motion_list/cyberdog2/preinstalled/cyberdog2_front_lift_left_right.toml
+    sha256: e5b4ce0735fb3195b417c8d221b426da0d443494f61e86667590c71de21ba56e
+  data/raw/cyberdog2/motion_list/preinstalled/cyberdog2_front_lift_out_in.toml:
+    source: cyberdog2
+    url: https://raw.githubusercontent.com/MiRoboticsLab/cyberdog_locomotion/ad79bfdebba17ae803d0ed37ccc0d1c5e3627af3/control/motion_list/cyberdog2/preinstalled/cyberdog2_front_lift_out_in.toml
+    sha256: 0d3ee049c6cbc2bc7afb54a1bf078d39cb9f0bd7b9174472d0d4f51a5f1f4dc5
+  data/raw/cyberdog2/motion_list/preinstalled/cyberdog2_front_lift_switch.toml:
+    source: cyberdog2
+    url: https://raw.githubusercontent.com/MiRoboticsLab/cyberdog_locomotion/ad79bfdebba17ae803d0ed37ccc0d1c5e3627af3/control/motion_list/cyberdog2/preinstalled/cyberdog2_front_lift_switch.toml
+    sha256: 3160b728e016dac691f1253889a5b7f169ddf8d9c146fd788e1107de97fc06a5
+  data/raw/cyberdog2/motion_list/preinstalled/cyberdog2_hiFive_LFleg_posCtrl.toml:
+    source: cyberdog2
+    url: https://raw.githubusercontent.com/MiRoboticsLab/cyberdog_locomotion/ad79bfdebba17ae803d0ed37ccc0d1c5e3627af3/control/motion_list/cyberdog2/preinstalled/cyberdog2_hiFive_LFleg_posCtrl.toml
+    sha256: ac7e01be58f7eff1323ef2f9b89c292c381d5330c5e2bc03c692e3d16d134da3
+  data/raw/cyberdog2/motion_list/preinstalled/cyberdog2_hiFive_RFleg_posCtrl.toml:
+    source: cyberdog2
+    url: https://raw.githubusercontent.com/MiRoboticsLab/cyberdog_locomotion/ad79bfdebba17ae803d0ed37ccc0d1c5e3627af3/control/motion_list/cyberdog2/preinstalled/cyberdog2_hiFive_RFleg_posCtrl.toml
+    sha256: dde3f80aba4adecc3a32a65cac344053eb9be50a46aef2e46cfddcf952e382b3
+  data/raw/cyberdog2/motion_list/preinstalled/cyberdog2_jump3D.toml:
+    source: cyberdog2
+    url: https://raw.githubusercontent.com/MiRoboticsLab/cyberdog_locomotion/ad79bfdebba17ae803d0ed37ccc0d1c5e3627af3/control/motion_list/cyberdog2/preinstalled/cyberdog2_jump3D.toml
+    sha256: 63be78327e43d018ab3059afbec23be7e97c3ffd9e7ae7f57b7d978f116592d4
+  data/raw/cyberdog2/motion_list/preinstalled/cyberdog2_moonwalk.toml:
+    source: cyberdog2
+    url: https://raw.githubusercontent.com/MiRoboticsLab/cyberdog_locomotion/ad79bfdebba17ae803d0ed37ccc0d1c5e3627af3/control/motion_list/cyberdog2/preinstalled/cyberdog2_moonwalk.toml
+    sha256: be839754cd5d253cc3ecf3427412687d017817b03fc597a2d1164af9bcb7bb29
+  data/raw/cyberdog2/motion_list/preinstalled/cyberdog2_moonwalk_backward.toml:
+    source: cyberdog2
+    url: https://raw.githubusercontent.com/MiRoboticsLab/cyberdog_locomotion/ad79bfdebba17ae803d0ed37ccc0d1c5e3627af3/control/motion_list/cyberdog2/preinstalled/cyberdog2_moonwalk_backward.toml
+    sha256: 9ca600a101d521d8d6577ae7c90b40bd2f6960e5cb5f011a03716312dfb07879
+  data/raw/cyberdog2/motion_list/preinstalled/cyberdog2_moonwalk_switch_left.toml:
+    source: cyberdog2
+    url: https://raw.githubusercontent.com/MiRoboticsLab/cyberdog_locomotion/ad79bfdebba17ae803d0ed37ccc0d1c5e3627af3/control/motion_list/cyberdog2/preinstalled/cyberdog2_moonwalk_switch_left.toml
+    sha256: 41ab1d14a9e27f81d934aa5af20607dbc779e5aebedf4418397e88f116f21f6d
+  data/raw/cyberdog2/motion_list/preinstalled/cyberdog2_moonwalk_switch_right.toml:
+    source: cyberdog2
+    url: https://raw.githubusercontent.com/MiRoboticsLab/cyberdog_locomotion/ad79bfdebba17ae803d0ed37ccc0d1c5e3627af3/control/motion_list/cyberdog2/preinstalled/cyberdog2_moonwalk_switch_right.toml
+    sha256: 06db176bb1c7f0c6eccb663ec459c4f91a91d0b3bd59a23616c59ff8febc1273
+  data/raw/cyberdog2/motion_list/preinstalled/cyberdog2_motion.toml:
+    source: cyberdog2
+    url: https://raw.githubusercontent.com/MiRoboticsLab/cyberdog_locomotion/ad79bfdebba17ae803d0ed37ccc0d1c5e3627af3/control/motion_list/cyberdog2/preinstalled/cyberdog2_motion.toml
+    sha256: 773b0fb0972a15399e117e9fc5725275820c04598923c12b6b101dd29c7777db
+  data/raw/cyberdog2/motion_list/preinstalled/cyberdog2_pitch_down_left.toml:
+    source: cyberdog2
+    url: https://raw.githubusercontent.com/MiRoboticsLab/cyberdog_locomotion/ad79bfdebba17ae803d0ed37ccc0d1c5e3627af3/control/motion_list/cyberdog2/preinstalled/cyberdog2_pitch_down_left.toml
+    sha256: 58e88a61eeb7e51342e07cfcdd47825e92f3d7ae55c1dedaea0bea6005d37e64
+  data/raw/cyberdog2/motion_list/preinstalled/cyberdog2_pitch_down_right.toml:
+    source: cyberdog2
+    url: https://raw.githubusercontent.com/MiRoboticsLab/cyberdog_locomotion/ad79bfdebba17ae803d0ed37ccc0d1c5e3627af3/control/motion_list/cyberdog2/preinstalled/cyberdog2_pitch_down_right.toml
+    sha256: 1fe1e1cf2c61bea31036cbbaeace10fd236268ca807a7a60a6d00118e72e6bca
+  data/raw/cyberdog2/motion_list/preinstalled/cyberdog2_pitch_gain_factory_calibrate.toml:
+    source: cyberdog2
+    url: https://raw.githubusercontent.com/MiRoboticsLab/cyberdog_locomotion/ad79bfdebba17ae803d0ed37ccc0d1c5e3627af3/control/motion_list/cyberdog2/preinstalled/cyberdog2_pitch_gain_factory_calibrate.toml
+    sha256: c27431b5b9c10146655dc73589ff6d563e7541c350772671e160db4eaf508e7d
+  data/raw/cyberdog2/motion_list/preinstalled/cyberdog2_push_up.toml:
+    source: cyberdog2
+    url: https://raw.githubusercontent.com/MiRoboticsLab/cyberdog_locomotion/ad79bfdebba17ae803d0ed37ccc0d1c5e3627af3/control/motion_list/cyberdog2/preinstalled/cyberdog2_push_up.toml
+    sha256: 5d118068fa38c36348ecf75e2a856c63a54a5ec0dd7874ce9b4ae60e2fd70f8b
+  data/raw/cyberdog2/motion_list/preinstalled/cyberdog2_rear_lift_left_right.toml:
+    source: cyberdog2
+    url: https://raw.githubusercontent.com/MiRoboticsLab/cyberdog_locomotion/ad79bfdebba17ae803d0ed37ccc0d1c5e3627af3/control/motion_list/cyberdog2/preinstalled/cyberdog2_rear_lift_left_right.toml
+    sha256: 5d5b614d8cc2b39328035cf007727c9f918149bb550b2a2eefa041893b60a874
+  data/raw/cyberdog2/motion_list/preinstalled/cyberdog2_rear_lift_out_in.toml:
+    source: cyberdog2
+    url: https://raw.githubusercontent.com/MiRoboticsLab/cyberdog_locomotion/ad79bfdebba17ae803d0ed37ccc0d1c5e3627af3/control/motion_list/cyberdog2/preinstalled/cyberdog2_rear_lift_out_in.toml
+    sha256: cc484b93e9211441176a499e9f702503f1c0c6f34ac22cbd671dc4fed2bcc82c
+  data/raw/cyberdog2/motion_list/preinstalled/cyberdog2_rear_lift_switch.toml:
+    source: cyberdog2
+    url: https://raw.githubusercontent.com/MiRoboticsLab/cyberdog_locomotion/ad79bfdebba17ae803d0ed37ccc0d1c5e3627af3/control/motion_list/cyberdog2/preinstalled/cyberdog2_rear_lift_switch.toml
+    sha256: 205ee3fabb7a9007cac743b39644ae05a1e5eb8f655438ba72b750deb6f9f37b
+  data/raw/cyberdog2/motion_list/preinstalled/cyberdog2_short_dance_1.toml:
+    source: cyberdog2
+    url: https://raw.githubusercontent.com/MiRoboticsLab/cyberdog_locomotion/ad79bfdebba17ae803d0ed37ccc0d1c5e3627af3/control/motion_list/cyberdog2/preinstalled/cyberdog2_short_dance_1.toml
+    sha256: 203022f6707c14abda732e62ec873a43fdd53bec0f5e71ea6e6363215eac3096
+  data/raw/cyberdog2/motion_list/preinstalled/cyberdog2_short_dance_2.toml:
+    source: cyberdog2
+    url: https://raw.githubusercontent.com/MiRoboticsLab/cyberdog_locomotion/ad79bfdebba17ae803d0ed37ccc0d1c5e3627af3/control/motion_list/cyberdog2/preinstalled/cyberdog2_short_dance_2.toml
+    sha256: 257c0c166f2d4a4143b90b6bd9e503d4f80730edb36470a32193752fed96a74e
+  data/raw/cyberdog2/motion_list/preinstalled/cyberdog2_sitDown_posCtrl.toml:
+    source: cyberdog2
+    url: https://raw.githubusercontent.com/MiRoboticsLab/cyberdog_locomotion/ad79bfdebba17ae803d0ed37ccc0d1c5e3627af3/control/motion_list/cyberdog2/preinstalled/cyberdog2_sitDown_posCtrl.toml
+    sha256: 6514015e23bcd2ae85c74f0256d30d30c19874b10d8fe45dd7c2dfe2e6a67f79
+  data/raw/cyberdog2/motion_list/preinstalled/cyberdog2_sitDown_posCtrl_left.toml:
+    source: cyberdog2
+    url: https://raw.githubusercontent.com/MiRoboticsLab/cyberdog_locomotion/ad79bfdebba17ae803d0ed37ccc0d1c5e3627af3/control/motion_list/cyberdog2/preinstalled/cyberdog2_sitDown_posCtrl_left.toml
+    sha256: c9a3a6ecb2e09ab73b590739222f7bd8f0389188ae54417911cff873072aaba6
+  data/raw/cyberdog2/motion_list/preinstalled/cyberdog2_sitDown_posCtrl_right.toml:
+    source: cyberdog2
+    url: https://raw.githubusercontent.com/MiRoboticsLab/cyberdog_locomotion/ad79bfdebba17ae803d0ed37ccc0d1c5e3627af3/control/motion_list/cyberdog2/preinstalled/cyberdog2_sitDown_posCtrl_right.toml
+    sha256: 5818eda4fb38813f7c8a53e3793c94f1431fc213c7528352a906adb88f796bfb
+  data/raw/cyberdog2/motion_list/preinstalled/cyberdog2_sitDown_posCtrl_shake.toml:
+    source: cyberdog2
+    url: https://raw.githubusercontent.com/MiRoboticsLab/cyberdog_locomotion/ad79bfdebba17ae803d0ed37ccc0d1c5e3627af3/control/motion_list/cyberdog2/preinstalled/cyberdog2_sitDown_posCtrl_shake.toml
+    sha256: 2d30e1ea237d5788f9249b9b61d10502ac51956e2deb4f90ce5429e24864139a
+  data/raw/cyberdog2/motion_list/preinstalled/cyberdog2_special_pronk.toml:
+    source: cyberdog2
+    url: https://raw.githubusercontent.com/MiRoboticsLab/cyberdog_locomotion/ad79bfdebba17ae803d0ed37ccc0d1c5e3627af3/control/motion_list/cyberdog2/preinstalled/cyberdog2_special_pronk.toml
+    sha256: 2e750d2acc151763435360face4cac1eb85dc4d353b0c3b6579cb5c72eeeca40
+  data/raw/cyberdog2/motion_list/preinstalled/cyberdog2_special_trot.toml:
+    source: cyberdog2
+    url: https://raw.githubusercontent.com/MiRoboticsLab/cyberdog_locomotion/ad79bfdebba17ae803d0ed37ccc0d1c5e3627af3/control/motion_list/cyberdog2/preinstalled/cyberdog2_special_trot.toml
+    sha256: afb982610d1b44267d16032fa325e5bf15b199cf251066423f8e881aed7a34f7
+  data/raw/cyberdog2/motion_list/preinstalled/cyberdog2_swing_head_posCtrl.toml:
+    source: cyberdog2
+    url: https://raw.githubusercontent.com/MiRoboticsLab/cyberdog_locomotion/ad79bfdebba17ae803d0ed37ccc0d1c5e3627af3/control/motion_list/cyberdog2/preinstalled/cyberdog2_swing_head_posCtrl.toml
+    sha256: f38b0f8a5d3fb59feaa569f35f84d1f81e4de957f8306cc14768cd3c33e61b46
+  data/raw/cyberdog2/motion_list/preinstalled/cyberdog2_swing_hip_posCtrl.toml:
+    source: cyberdog2
+    url: https://raw.githubusercontent.com/MiRoboticsLab/cyberdog_locomotion/ad79bfdebba17ae803d0ed37ccc0d1c5e3627af3/control/motion_list/cyberdog2/preinstalled/cyberdog2_swing_hip_posCtrl.toml
+    sha256: 80cfad73bdfc59d441c700713a68337362db432e5afd7efe0f9d0dfecd4c7ac6
+  data/raw/cyberdog2/motion_list/preinstalled/cyberdog2_trot_in_out.toml:
+    source: cyberdog2
+    url: https://raw.githubusercontent.com/MiRoboticsLab/cyberdog_locomotion/ad79bfdebba17ae803d0ed37ccc0d1c5e3627af3/control/motion_list/cyberdog2/preinstalled/cyberdog2_trot_in_out.toml
+    sha256: b8d2a0083b41920e4dd6aac12380ed88c35ed77b72d70cf54a4078f635f6900e
+  data/raw/cyberdog2/motion_list/preinstalled/cyberdog2_trot_pitch.toml:
+    source: cyberdog2
+    url: https://raw.githubusercontent.com/MiRoboticsLab/cyberdog_locomotion/ad79bfdebba17ae803d0ed37ccc0d1c5e3627af3/control/motion_list/cyberdog2/preinstalled/cyberdog2_trot_pitch.toml
+    sha256: 7845d90ad51b264865ade8dd78641f459b8d66d51a4cca616bb2eb6e8f34fba0
+  data/raw/cyberdog2/motion_list/preinstalled/cyberdog2_trot_swing.toml:
+    source: cyberdog2
+    url: https://raw.githubusercontent.com/MiRoboticsLab/cyberdog_locomotion/ad79bfdebba17ae803d0ed37ccc0d1c5e3627af3/control/motion_list/cyberdog2/preinstalled/cyberdog2_trot_swing.toml
+    sha256: a3a29378043bdedb49f8e0f5a68fd7a2bcc07181ee293b05e5a771eee70effc1
+  data/raw/cyberdog2/motion_list/preinstalled/cyberdog2_up_down.toml:
+    source: cyberdog2
+    url: https://raw.githubusercontent.com/MiRoboticsLab/cyberdog_locomotion/ad79bfdebba17ae803d0ed37ccc0d1c5e3627af3/control/motion_list/cyberdog2/preinstalled/cyberdog2_up_down.toml
+    sha256: 0dd537fda6b8bb24f5b35f8bb3753160d3fc3d7fa650a60137fde1a0ffa2b0cf
+  data/raw/cyberdog2/motion_list/preinstalled/cyberdog2_walk_wave.toml:
+    source: cyberdog2
+    url: https://raw.githubusercontent.com/MiRoboticsLab/cyberdog_locomotion/ad79bfdebba17ae803d0ed37ccc0d1c5e3627af3/control/motion_list/cyberdog2/preinstalled/cyberdog2_walk_wave.toml
+    sha256: 2666963f02da8ec1d238241c4d2efcd5e5f40148e40d92f0871463bbe9b05604
+  data/raw/cyberdog2/motion_list/user/define/user_gait.toml:
+    source: cyberdog2
+    url: https://raw.githubusercontent.com/MiRoboticsLab/cyberdog_locomotion/ad79bfdebba17ae803d0ed37ccc0d1c5e3627af3/control/motion_list/cyberdog2/user/define/user_gait.toml
+    sha256: b484a146b52ba6079f5a42646e701c8ab5c3e2b64335a13770850ee95ef80c6c
+  data/raw/cyberdog2/motion_list/user/define/user_gait_00.toml:
+    source: cyberdog2
+    url: https://raw.githubusercontent.com/MiRoboticsLab/cyberdog_locomotion/ad79bfdebba17ae803d0ed37ccc0d1c5e3627af3/control/motion_list/cyberdog2/user/define/user_gait_00.toml
+    sha256: 411badccc08641a037397c11de68458486cfd03d2e655cf4342dff071ae78910
+  data/raw/cyberdog2/motion_list/user/define/user_gait_01.toml:
+    source: cyberdog2
+    url: https://raw.githubusercontent.com/MiRoboticsLab/cyberdog_locomotion/ad79bfdebba17ae803d0ed37ccc0d1c5e3627af3/control/motion_list/cyberdog2/user/define/user_gait_01.toml
+    sha256: 8fd441502e1c6b66b55ec82bea770d0c35894c05cfcd5794a152c4703e6a5bc7
+  data/raw/cyberdog2/motion_list/user/define/user_gait_02.toml:
+    source: cyberdog2
+    url: https://raw.githubusercontent.com/MiRoboticsLab/cyberdog_locomotion/ad79bfdebba17ae803d0ed37ccc0d1c5e3627af3/control/motion_list/cyberdog2/user/define/user_gait_02.toml
+    sha256: e20c38fa97590386cdc2920d52ab5c268000ef314fa8f34cdaf3952d402b8ec4
+  data/raw/cyberdog2/motion_list/user/define/user_gait_03.toml:
+    source: cyberdog2
+    url: https://raw.githubusercontent.com/MiRoboticsLab/cyberdog_locomotion/ad79bfdebba17ae803d0ed37ccc0d1c5e3627af3/control/motion_list/cyberdog2/user/define/user_gait_03.toml
+    sha256: 999e1df55a67f1e72fd6d9464eb6c9d388683fb183b01e489ba71bd70cad5b07
+  data/raw/cyberdog2/motion_list/user/define/user_gait_04.toml:
+    source: cyberdog2
+    url: https://raw.githubusercontent.com/MiRoboticsLab/cyberdog_locomotion/ad79bfdebba17ae803d0ed37ccc0d1c5e3627af3/control/motion_list/cyberdog2/user/define/user_gait_04.toml
+    sha256: fec5245fb63a0665a4641f1ce7c973c343cf3175b8794ca874a443746b2546fe
+  data/raw/cyberdog2/motion_list/user/define/user_gait_05.toml:
+    source: cyberdog2
+    url: https://raw.githubusercontent.com/MiRoboticsLab/cyberdog_locomotion/ad79bfdebba17ae803d0ed37ccc0d1c5e3627af3/control/motion_list/cyberdog2/user/define/user_gait_05.toml
+    sha256: e492c18546356a6212e9571db8b5268753478d980159426c69c385f465f751fc
+  data/raw/cyberdog2/motion_list/user/define/user_gait_06.toml:
+    source: cyberdog2
+    url: https://raw.githubusercontent.com/MiRoboticsLab/cyberdog_locomotion/ad79bfdebba17ae803d0ed37ccc0d1c5e3627af3/control/motion_list/cyberdog2/user/define/user_gait_06.toml
+    sha256: 38f9b181f8b887683d2fa309793bb45d8b70aadf1b5567a2ac98e8bd49f81a7c
+  data/raw/cyberdog2/motion_list/user/define/user_gait_07.toml:
+    source: cyberdog2
+    url: https://raw.githubusercontent.com/MiRoboticsLab/cyberdog_locomotion/ad79bfdebba17ae803d0ed37ccc0d1c5e3627af3/control/motion_list/cyberdog2/user/define/user_gait_07.toml
+    sha256: 105d02263268046b4b60a2307e18de95edc581b24eea1627948e0dbe101da9a7
+  data/raw/cyberdog2/motion_list/user/define/user_gait_08.toml:
+    source: cyberdog2
+    url: https://raw.githubusercontent.com/MiRoboticsLab/cyberdog_locomotion/ad79bfdebba17ae803d0ed37ccc0d1c5e3627af3/control/motion_list/cyberdog2/user/define/user_gait_08.toml
+    sha256: ec3009a52487a81b305be74ac70e22eb1d8ef0ff12a724ea0748d9a7496c4c46
+  data/raw/cyberdog2/motion_list/user/define/user_gait_09.toml:
+    source: cyberdog2
+    url: https://raw.githubusercontent.com/MiRoboticsLab/cyberdog_locomotion/ad79bfdebba17ae803d0ed37ccc0d1c5e3627af3/control/motion_list/cyberdog2/user/define/user_gait_09.toml
+    sha256: 7ba2137b1f7ef959a1d3b4f7c892aa385e683caf4a928d7ee3ad381b62c870ff
+  data/raw/cyberdog2/motion_list/user/define/user_gait_10.toml:
+    source: cyberdog2
+    url: https://raw.githubusercontent.com/MiRoboticsLab/cyberdog_locomotion/ad79bfdebba17ae803d0ed37ccc0d1c5e3627af3/control/motion_list/cyberdog2/user/define/user_gait_10.toml
+    sha256: 88a212dc3496608902eabfd2a195c08d797541a708cc639631cb81b42d09f50e
+  data/raw/cyberdog2/motion_list/user/define/user_gait_11.toml:
+    source: cyberdog2
+    url: https://raw.githubusercontent.com/MiRoboticsLab/cyberdog_locomotion/ad79bfdebba17ae803d0ed37ccc0d1c5e3627af3/control/motion_list/cyberdog2/user/define/user_gait_11.toml
+    sha256: b783ebb06f69f4bcd7f55fecaed3c1341373f567de6682d01df35dac7dd69b9d
+  data/raw/cyberdog2/motion_list/user/define/user_gait_12.toml:
+    source: cyberdog2
+    url: https://raw.githubusercontent.com/MiRoboticsLab/cyberdog_locomotion/ad79bfdebba17ae803d0ed37ccc0d1c5e3627af3/control/motion_list/cyberdog2/user/define/user_gait_12.toml
+    sha256: 02c3ed8539077f0a400328fecb6f3c5b0070b5c696395344f1e929e7979b2d55
+  data/raw/cyberdog2/motion_list/user/define/user_gait_13.toml:
+    source: cyberdog2
+    url: https://raw.githubusercontent.com/MiRoboticsLab/cyberdog_locomotion/ad79bfdebba17ae803d0ed37ccc0d1c5e3627af3/control/motion_list/cyberdog2/user/define/user_gait_13.toml
+    sha256: 02c3ed8539077f0a400328fecb6f3c5b0070b5c696395344f1e929e7979b2d55
+  data/raw/cyberdog2/motion_list/user/define/user_gait_14.toml:
+    source: cyberdog2
+    url: https://raw.githubusercontent.com/MiRoboticsLab/cyberdog_locomotion/ad79bfdebba17ae803d0ed37ccc0d1c5e3627af3/control/motion_list/cyberdog2/user/define/user_gait_14.toml
+    sha256: 02c3ed8539077f0a400328fecb6f3c5b0070b5c696395344f1e929e7979b2d55
+  data/raw/cyberdog2/motion_list/user/define/user_gait_15.toml:
+    source: cyberdog2
+    url: https://raw.githubusercontent.com/MiRoboticsLab/cyberdog_locomotion/ad79bfdebba17ae803d0ed37ccc0d1c5e3627af3/control/motion_list/cyberdog2/user/define/user_gait_15.toml
+    sha256: 02c3ed8539077f0a400328fecb6f3c5b0070b5c696395344f1e929e7979b2d55
+  data/raw/cyberdog2/motion_list/user/define/user_gait_16.toml:
+    source: cyberdog2
+    url: https://raw.githubusercontent.com/MiRoboticsLab/cyberdog_locomotion/ad79bfdebba17ae803d0ed37ccc0d1c5e3627af3/control/motion_list/cyberdog2/user/define/user_gait_16.toml
+    sha256: 10e3714d17e022b47edb8171e9f5f4c951e4afe724e626b86805370b5b521a2b
+  data/raw/cyberdog2/motion_list/user/define/user_gait_17.toml:
+    source: cyberdog2
+    url: https://raw.githubusercontent.com/MiRoboticsLab/cyberdog_locomotion/ad79bfdebba17ae803d0ed37ccc0d1c5e3627af3/control/motion_list/cyberdog2/user/define/user_gait_17.toml
+    sha256: 90883db22cc64d150af3ff5c3bf557b38c3398d91798f017da2a42a67aabc5e7
+  data/raw/cyberdog2/motion_list/user/define/user_gait_18.toml:
+    source: cyberdog2
+    url: https://raw.githubusercontent.com/MiRoboticsLab/cyberdog_locomotion/ad79bfdebba17ae803d0ed37ccc0d1c5e3627af3/control/motion_list/cyberdog2/user/define/user_gait_18.toml
+    sha256: 90883db22cc64d150af3ff5c3bf557b38c3398d91798f017da2a42a67aabc5e7
+  data/raw/cyberdog2/motion_list/user/define/user_gait_19.toml:
+    source: cyberdog2
+    url: https://raw.githubusercontent.com/MiRoboticsLab/cyberdog_locomotion/ad79bfdebba17ae803d0ed37ccc0d1c5e3627af3/control/motion_list/cyberdog2/user/define/user_gait_19.toml
+    sha256: 90883db22cc64d150af3ff5c3bf557b38c3398d91798f017da2a42a67aabc5e7
+  data/raw/cyberdog2/motion_list/user/define/user_gait_20.toml:
+    source: cyberdog2
+    url: https://raw.githubusercontent.com/MiRoboticsLab/cyberdog_locomotion/ad79bfdebba17ae803d0ed37ccc0d1c5e3627af3/control/motion_list/cyberdog2/user/define/user_gait_20.toml
+    sha256: 0803cece0a39e270584f2a577e9f3ada2db821ad2c9bd1c35fc4e91840b15a4e
+  data/raw/cyberdog2/motion_list/user/parameter/cyberdog2_user80_ballet.toml:
+    source: cyberdog2
+    url: https://raw.githubusercontent.com/MiRoboticsLab/cyberdog_locomotion/ad79bfdebba17ae803d0ed37ccc0d1c5e3627af3/control/motion_list/cyberdog2/user/parameter/cyberdog2_user80_ballet.toml
+    sha256: a0ff21ee5f0848bb52a32ecc39961494cbcdd2010f4838283d4811cd1126357f
+  data/raw/cyberdog2/motion_list/user/parameter/cyberdog2_user81_front_lift.toml:
+    source: cyberdog2
+    url: https://raw.githubusercontent.com/MiRoboticsLab/cyberdog_locomotion/ad79bfdebba17ae803d0ed37ccc0d1c5e3627af3/control/motion_list/cyberdog2/user/parameter/cyberdog2_user81_front_lift.toml
+    sha256: ed980e899e5abdb18ec93c4fab49cb6cdcbe280170df483a14b64d66e0a981e2
+  data/raw/cyberdog2/motion_list/user/parameter/cyberdog2_user82_rear_lift.toml:
+    source: cyberdog2
+    url: https://raw.githubusercontent.com/MiRoboticsLab/cyberdog_locomotion/ad79bfdebba17ae803d0ed37ccc0d1c5e3627af3/control/motion_list/cyberdog2/user/parameter/cyberdog2_user82_rear_lift.toml
+    sha256: c7823d894e18ee50d4feec8c061ef02884bb4cc7f1f10715fc8b01874a486edc
+  data/raw/cyberdog2/motion_list/user/parameter/cyberdog2_user83_walk_wave.toml:
+    source: cyberdog2
+    url: https://raw.githubusercontent.com/MiRoboticsLab/cyberdog_locomotion/ad79bfdebba17ae803d0ed37ccc0d1c5e3627af3/control/motion_list/cyberdog2/user/parameter/cyberdog2_user83_walk_wave.toml
+    sha256: 48e1bd0f468723e7bc7c5f27f8de333de1a988e4a629f80a515e0d4852b471cf
+  data/raw/cyberdog2/motion_list/user/parameter/cyberdog2_user84_trot_in_out.toml:
+    source: cyberdog2
+    url: https://raw.githubusercontent.com/MiRoboticsLab/cyberdog_locomotion/ad79bfdebba17ae803d0ed37ccc0d1c5e3627af3/control/motion_list/cyberdog2/user/parameter/cyberdog2_user84_trot_in_out.toml
+    sha256: 50489c5e2d2a26fdb4a4708dfe6ef07e58fd964ed633bc82666bad0661db5d03
+  data/raw/cyberdog2/motion_list/user/parameter/cyberdog2_user85_diagonal_FR.toml:
+    source: cyberdog2
+    url: https://raw.githubusercontent.com/MiRoboticsLab/cyberdog_locomotion/ad79bfdebba17ae803d0ed37ccc0d1c5e3627af3/control/motion_list/cyberdog2/user/parameter/cyberdog2_user85_diagonal_FR.toml
+    sha256: 2f9ccc7efdda8499b4fa7dd9804c1ecb4701b1f5727eada1590283cb5755405b
+  data/raw/cyberdog2/motion_list/user/parameter/cyberdog2_user86_diagonal_FL.toml:
+    source: cyberdog2
+    url: https://raw.githubusercontent.com/MiRoboticsLab/cyberdog_locomotion/ad79bfdebba17ae803d0ed37ccc0d1c5e3627af3/control/motion_list/cyberdog2/user/parameter/cyberdog2_user86_diagonal_FL.toml
+    sha256: 2eb381b39f10684677785b5211c22d59a5d7b9c2b6d16e9ad46041342d495ebd
+  data/raw/cyberdog2/motion_list/user/parameter/cyberdog2_user87_pronk_front_back.toml:
+    source: cyberdog2
+    url: https://raw.githubusercontent.com/MiRoboticsLab/cyberdog_locomotion/ad79bfdebba17ae803d0ed37ccc0d1c5e3627af3/control/motion_list/cyberdog2/user/parameter/cyberdog2_user87_pronk_front_back.toml
+    sha256: 939f868df4988769019e4c017dafc63acb284cfd3ae2f271bd5023c7f118cb75
+  data/raw/cyberdog2/motion_list/user/parameter/cyberdog2_user88_FR_lift.toml:
+    source: cyberdog2
+    url: https://raw.githubusercontent.com/MiRoboticsLab/cyberdog_locomotion/ad79bfdebba17ae803d0ed37ccc0d1c5e3627af3/control/motion_list/cyberdog2/user/parameter/cyberdog2_user88_FR_lift.toml
+    sha256: 17878c412da167dcff5d688a38c8f490e3d01be17a7f040b4d608cd79cb87d36
+  data/raw/cyberdog2/motion_list/user/parameter/cyberdog2_user89_FL_lift.toml:
+    source: cyberdog2
+    url: https://raw.githubusercontent.com/MiRoboticsLab/cyberdog_locomotion/ad79bfdebba17ae803d0ed37ccc0d1c5e3627af3/control/motion_list/cyberdog2/user/parameter/cyberdog2_user89_FL_lift.toml
+    sha256: 4864f7ad3fed0fedbbaacc45d35805f4e72972b718cf273789eb1b2f6320b467
+  data/raw/cyberdog2/motion_list/user/parameter/cyberdog2_user90_moonwalk.toml:
+    source: cyberdog2
+    url: https://raw.githubusercontent.com/MiRoboticsLab/cyberdog_locomotion/ad79bfdebba17ae803d0ed37ccc0d1c5e3627af3/control/motion_list/cyberdog2/user/parameter/cyberdog2_user90_moonwalk.toml
+    sha256: 36c02a5cde11ef323b46eb7ab4826d01c6b49af853de37108b04d2410d9610e7
+  data/raw/cyberdog2/motion_list/user/parameter/cyberdog2_user91_amble.toml:
+    source: cyberdog2
+    url: https://raw.githubusercontent.com/MiRoboticsLab/cyberdog_locomotion/ad79bfdebba17ae803d0ed37ccc0d1c5e3627af3/control/motion_list/cyberdog2/user/parameter/cyberdog2_user91_amble.toml
+    sha256: 40c049a191b6a0a475499727e1c7d609fcee21f607fc6c43552144c94e4a6c97
+  data/raw/cyberdog2/motion_list/user/parameter/cyberdog2_user96_moonwalk_backward.toml:
+    source: cyberdog2
+    url: https://raw.githubusercontent.com/MiRoboticsLab/cyberdog_locomotion/ad79bfdebba17ae803d0ed37ccc0d1c5e3627af3/control/motion_list/cyberdog2/user/parameter/cyberdog2_user96_moonwalk_backward.toml
+    sha256: 203f5bbdf41916d4c74978c9289e9f7bb5c4669d0e36f1f3e3ff5474ec6b56af

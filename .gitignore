@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+.ruff_cache/
+
+# Downloaded sources and generated motion libraries (rebuild with scripts/data/*)
+/data/
+# Training runs, renders
+/logs/
+/out/
+wm_nan_batch.pt
+policy_nan_batch.pt
+MUJOCO_LOG.TXT
