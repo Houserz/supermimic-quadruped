@@ -1,7 +1,7 @@
 [project]
 name = "supermimic-quadruped"
 version = "0.1.0"
-description = "SuperMimic (arXiv 2610.28480) motion tracking for quadruped robots: dog motion capture retargeted to the Dobot Rover X1, on mjlab / MuJoCo Warp"
+description = "SuperMimic (arXiv 2610.28480) motion tracking and joystick walking for quadruped robots: dog motion capture retargeted to the Dobot Rover X1, on mjlab / MuJoCo Warp"
 readme = "README.md"
 requires-python = ">=3.12,<3.13"
 dependencies = [
@@ -23,6 +23,7 @@ dependencies = [
   "pyyaml>=6.0",
   "onnx>=1.16",
   "onnxruntime>=1.17",
+  "pillow",  # on-screen keys (supermimic.planner.hud)
 ]
 
 [project.scripts]

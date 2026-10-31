@@ -77,15 +77,38 @@ class Keypoints:
     paw_offset: np.ndarray  # (4,) constant height of each paw joint above its contact point
     src_fps: float
     src_frames: int
+    stale_head: int = 0  # leading 50 Hz frames that depend on stale source frames (``stale_head_frames``)
 
     @property
     def frames(self) -> int:
         return int(self.anchors.shape[0])
 
 
+SAVGOL_WINDOW = 5  # keypoint smoothing at 50 Hz (load_keypoints)
+
+
+def stale_head_frames(pos: np.ndarray, src_fps: float) -> int:
+    """Leading 50 Hz keypoint frames built from stale source frames.
+
+    Every Tencent BVH starts with two identical frames and then jumps (3-49 cm at some joint against
+    a median step of 3-8 cm): a held pose recorded before the capture, not motion. Frames 0 .. L-1 of
+    a leading run of L >= 2 identical source frames are stale; a 50 Hz frame sampled before the first
+    real one (t < L / src_fps) is built from them, and the Savitzky-Golay smoothing carries that into
+    the next ``SAVGOL_WINDOW // 2`` frames. AI4Animation's BVHs have no such run, so their frames are
+    untouched."""
+    n = 0
+    while n + 1 < len(pos) and np.array_equal(pos[n], pos[n + 1]):
+        n += 1
+    if n == 0:
+        return 0
+    direct = int(np.ceil((n + 1) / src_fps * FPS - 1e-9))
+    return direct + SAVGOL_WINDOW // 2
+
+
 def load_keypoints(path: Path, skel: DogSkeleton) -> Keypoints:
     b = bvh.read(path)
     pos, _ = bvh.forward_kinematics(b)
+    stale = stale_head_frames(pos, b.fps)
     pos = pos * skel.units @ Y_UP_TO_Z_UP.T
     ia = [b.index(skel.anchors[l]) for l in LEGS]
     ip = [b.index(skel.paws[l]) for l in LEGS]
@@ -97,7 +120,7 @@ def load_keypoints(path: Path, skel: DogSkeleton) -> Keypoints:
         for a in range(3):
             res[:, j, a] = np.interp(t_out, t_src, pts[:, j, a])
     if len(t_out) >= 7:
-        res = savgol_filter(res, 5, 2, axis=0)
+        res = savgol_filter(res, SAVGOL_WINDOW, 2, axis=0)
     anchors, paws = res[:, :4], res[:, 4:]
     ground = np.percentile(paws[:, :, 2], 3, axis=0)  # per paw
     floor = float(np.median(ground))
@@ -105,7 +128,7 @@ def load_keypoints(path: Path, skel: DogSkeleton) -> Keypoints:
     anchors = anchors - [0, 0, floor]
     paws = paws - [0, 0, floor]
     paws[:, :, 2] -= offset  # contact point of each paw at z = 0 when planted
-    return Keypoints(Path(path).stem, anchors, paws, offset, b.fps, pos.shape[0])
+    return Keypoints(Path(path).stem, anchors, paws, offset, b.fps, pos.shape[0], stale)
 
 
 def body_frame(anchors: np.ndarray) -> tuple[np.ndarray, np.ndarray]:
@@ -253,6 +276,8 @@ def retarget(k: Keypoints, skel: DogSkeleton, cal: SourceCalibration, robot: Qua
     T = len(q)
     out = Retarget(k.name, root, quat, q, contacts, ik_residual=resid)
     out.fail = frame_checks(robot, root, R, q, resid, clip_amt, checks)
+    if k.stale_head:
+        out.fail["stale_source"] = t_out < k.stale_head / FPS - 1e-9  # robot frame j samples dog time t_out[j]
     out.fail["mocap_glitch"] = near["glitch"]
     out.fail["unsupported"] = _long_runs(~contacts.any(1), int(round(checks.max_flight_s * FPS))) | (root[:, 2] > checks.max_root_height)
     vxy = np.zeros(T)

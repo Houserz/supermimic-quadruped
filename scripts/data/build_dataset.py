@@ -125,6 +125,28 @@ def save(clip, name: str) -> str:
     return str(path.relative_to(ROOT))
 
 
+def edge_outlier(clip) -> tuple[bool, bool]:
+    """(start, end): is the first / last step of the clip's root an outlier against the next six
+    steps -- horizontal speed above their median + 0.5 m/s and above twice it, or yaw rate above
+    their median + 2 rad/s. Evaluated on the float32 values the npz will hold. A benchmark or an
+    episode that starts on such a step hands the robot a velocity the motion does not have (the
+    Tencent BVHs' stale first frames kicked the robot 0.5-0.8 rad off its heading)."""
+    ri = clip.body_names.index(ROOT_BODY)
+    p = clip.body_pos_w[:, ri].astype(np.float32)
+    q = clip.body_quat_w[:, ri].astype(np.float32)
+    out = []
+    for sl, i0 in ((slice(0, 8), 0), (slice(-8, None), -1)):
+        pp, qq = p[sl], q[sl]
+        w, x, y, z = qq.T
+        yaw = np.unwrap(np.arctan2(2 * (w * z + x * y), 1 - 2 * (y * y + z * z)))
+        dp = np.linalg.norm(np.diff(pp[:, :2], axis=0), axis=1) * clip.fps
+        dy = np.abs(np.diff(yaw)) * clip.fps
+        rest = slice(1, None) if i0 == 0 else slice(None, -1)
+        sp, sp_ref, y_e, y_ref = dp[i0], np.median(dp[rest]), dy[i0], np.median(dy[rest])
+        out.append(bool((sp > sp_ref + 0.5 and sp > 2 * sp_ref) or (y_e > y_ref + 2.0)))
+    return out[0], out[1]
+
+
 def build_dog(source: str, quad: robot.Quadruped, mirror: bool, entries: list, raw_entries: list, cal_out: dict) -> None:
     skel, pattern, prefix = DOG_SOURCES[source]
     paths = sorted(ROOT.glob(pattern))
@@ -146,15 +168,40 @@ def build_dog(source: str, quad: robot.Quadruped, mirror: bool, entries: list, r
             name = f"{prefix}_{k.name}_s{si}"
             e = {"name": name, "source": source, "raw": raw["file"], "segment_frames": [a, b], "category": None,
                  "origin": "mocap_retarget", "tag": k.name, "keep": False}
-            if (b - a) / FPS < MIN_SEGMENT_S:
+            # Frames dropped only as stale source frames do not count against the minimum length,
+            # so the rule does not make a segment disappear (two Tencent idles are exactly 2.00 s
+            # with their stale head and 1.94 s without).
+            stale = r.fail.get("stale_source")
+            a0 = a
+            while stale is not None and a0 > 0 and stale[a0 - 1] and not any(m[a0 - 1] for n, m in r.fail.items() if n != "stale_source"):
+                a0 -= 1
+            min_s = MIN_SEGMENT_S - (a - a0) / FPS
+            if (b - a) / FPS < min_s - 1e-9:
                 e["reason"] = f"segment {(b - a) / FPS:.2f} s (< {MIN_SEGMENT_S} s)"
                 entries.append(e)
                 continue
-            clip, info = export(quad, r.root_pos[a:b], r.root_quat[a:b], r.joint_pos[a:b], MIN_SEGMENT_S)
+            clip, info = export(quad, r.root_pos[a:b], r.root_quat[a:b], r.joint_pos[a:b], min_s - 1e-9)
+            edge = [0, 0]
+            while clip is not None:  # step past edge outliers (edge_outlier), one frame at a time
+                bad_start, bad_end = edge_outlier(clip)
+                if not (bad_start or bad_end):
+                    break
+                lead, trail = info
+                a, b = a + lead, b - trail  # the exported clip's own frames
+                if bad_start:
+                    a, edge[0] = a + 1, edge[0] + 1
+                if bad_end:
+                    b, edge[1] = b - 1, edge[1] + 1
+                clip, info = export(quad, r.root_pos[a:b], r.root_quat[a:b], r.joint_pos[a:b], min_s - 1e-9)
             if clip is None:
                 e["reason"] = info
                 entries.append(e)
                 continue
+            if a > a0:
+                e["stale_head_frames"] = a - a0
+            if any(edge):
+                e["edge_trim_frames"] = edge
+                e["segment_frames"] = [a, b]
             lead, trail = info
             contacts = r.contacts[a + lead : b - trail]
             e.update(keep=True, frames=clip.frames, duration_s=round(clip.frames / FPS, 2), trimmed_frames=[lead, trail],
